@@ -81,7 +81,7 @@ public class CouponController {
 
 	
 	//to update by id
-	@PutMapping("/update/id/{id}")
+	@PutMapping("/update/id/{couponId}")
 	public Coupon updateCoupon(@RequestBody Coupon deal) {
 		Coupon coupon = couponService.save(deal);
 		return coupon;

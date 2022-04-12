@@ -6,8 +6,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-@EnableEurekaClient
 @EnableSwagger2
+@EnableEurekaClient
 @SpringBootApplication
 public class OrderServiceApplication {
 
@@ -17,3 +17,5 @@ public class OrderServiceApplication {
 
 
 }
+
+//http://localhost:8087/swagger-ui.html#/cart-service

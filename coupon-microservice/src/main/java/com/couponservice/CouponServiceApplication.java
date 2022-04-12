@@ -14,3 +14,5 @@ public class CouponServiceApplication {
 		SpringApplication.run(CouponServiceApplication.class, args);
 	}
 }
+
+//http://localhost:8083/swagger-ui.html#/coupon-microservice
