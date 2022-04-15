@@ -1,0 +1,36 @@
+<div class="col-md-8 offset-md-3">
+    <br>
+    <h3>Create Coupon</h3>
+    <div class="container">
+        <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="couponId">Coupon Id</label>
+            <input type="text" class="form-control" id="couponId" required [(ngModel)]="coupon.couponId" name="couponId">
+        </div>
+
+        <div class="form-group">
+            <label for="category">Category</label>
+            <input type="text" class="form-control" id="category" required [(ngModel)]="coupon.category" name="category">
+        </div>
+
+        <div class="form-group">
+            <label for="count">Count </label>
+            <input type="number" class="form-control" id="count" required [(ngModel)]="coupon.count" name="coupon">
+        </div>
+
+        <div class="form-group">
+            <label for="offer">Offer </label>
+            <input type="text" class="form-control" id="offer" required [(ngModel)]="coupon.offer" name="offer">
+        </div>
+
+        <div class="form-group">
+            <label for="companyName">Company Name</label>
+            <input type="text" class="form-control" id="companyName" required [(ngModel)]="coupon.companyName" name="companyName">
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button><br><br>
+
+        </form>
+    </div>
+</div>
+
