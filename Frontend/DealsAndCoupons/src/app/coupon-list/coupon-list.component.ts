@@ -36,8 +36,7 @@ export class CouponListComponent implements OnInit {
       this.getCoupons();
     })
   }
-  couponDetails(couponId:string){
-    this.router.navigate(['coupon-details',couponId]);
-  }
+
+
 
 }

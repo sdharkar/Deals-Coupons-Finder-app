@@ -13,13 +13,13 @@ export class CouponService {
   //   throw new Error('Method not implemented.');
   // }
 
-  private baseURL= "http://localhost:8000/coupon/coupon";
+  private baseURL= "http://localhost:8000/coupon";
 
   constructor(private httpClient: HttpClient) { }
 
   //get all coupons
   getCouponList(): Observable<Coupon[]>{
-    return this.httpClient.get<Coupon[]>(`${this.baseURL}`);
+    return this.httpClient.get<Coupon[]>(`${this.baseURL}/all`);
   }
 
   // Add coupon
@@ -28,8 +28,9 @@ export class CouponService {
   }
 
   //get coupon by Id
-  getCouponById(couponId: String): Observable<Coupon>{
-    return this.httpClient.get<Coupon>(`http://localhost:8000/coupon/id/${couponId}`);
+  getCouponById(couponId: string): Observable<Coupon>{
+    return this.httpClient.get<Coupon>(`localhost:8083/coupon/id/${couponId}`);
+    //return this.httpClient.get<Coupon>(`${this.baseURL}/id/${couponId}`);
   }
 
   //update coupon
@@ -38,7 +39,7 @@ export class CouponService {
   }
 
   deleteCoupon(couponId:string): Observable<Object>{
-    return this.httpClient.delete(`${this.baseURL}/delete/${couponId}`);
+    return this.httpClient.delete(`${this.baseURL}/${couponId}`, {responseType: 'text'});
   }
 
 }

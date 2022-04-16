@@ -1,0 +1,57 @@
+<ng-container><!--</ng-container><ng-container *ngIf="coupons.length !=0">-->
+    <div class="container">
+        <div class="card-table">
+            <div class="card-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Sr no </th>
+                            <th>Coupon name</th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th> </th>
+                            <th>Action </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><!--<tr #ngFor="let coupon of coupons, let i = index">-->
+                            <th>1<!--{{}}--></th>
+                            <th>1<!--{{}}--></th>
+                            <th>1<!--{{}}--></th>
+                            <th>1<!--{{}}--></th>
+                            <th>1<!--{{}}--></th>
+                            <th>1<!--{{}}--></th>
+                            <th>1<!--{{}}--></th>
+                            <th><button class="btn btn-danger"><i class="fas fa-trash"></i></button></th>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td><button class="btn btn-danger">Empty Cart</button></td>
+                            <td><button routerLink="/coupons" class="btn btn-warning">More Deals</button></td>
+                            <td><button class="btn btn-success">Check Out</button></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+<!--<ng-container *ngIf="coupons.length == 0">-->
+<ng-container>
+<div class="container">
+    <div class="card">
+        <div class="card-title">My Cart</div>
+    </div>
+    <div class="center">
+        <img src="assets/images/cart.png" alt="">
+        <h5>Your cart is empty!</h5>
+        <h6>Add item to it now</h6>
+        <button routerLink="/coupons" class="btn btn-primary">Get Deals Now</button>
+    </div>
+
+</div>
+</ng-container>

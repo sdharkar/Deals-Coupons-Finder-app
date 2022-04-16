@@ -41,42 +41,42 @@ public class CouponController {
 	}
 	
 	//find by category
-	@GetMapping("/coupon/category/{category}")
+	@GetMapping("/category/{category}")
 	public List<Optional<Coupon>> searchCouponByCategory(@PathVariable("category") String category) {
 		List<Optional<Coupon>> coupon = couponService.findByCategory(category);
 		return coupon;
 	}
 	
 	//find by company name
-	@GetMapping("/coupon/company/{companyName}")
+	@GetMapping("/company/{companyName}")
 	public List<Optional<Coupon>> searchCouponByCompanyName(@PathVariable("companyName") String companyName) {
 		List<Optional<Coupon>> coupon = couponService.findByCompanyName(companyName);
 		return coupon;
 	}
 
 	//delete by coupon id
-	@DeleteMapping("/delete/{couponId}")
+	@DeleteMapping("/{couponId}")
 	public String deleteCouponBycouponId(@PathVariable("couponId") String couponId) {
 		String result = couponService.deleteById(couponId);
 		return result;
 	}
 	
 	//delete by category
-	@PostMapping("/delete/category/{category}")
+	@DeleteMapping("/delete/category/{category}")
 	public String deleteCouponByCategory(@PathVariable("category") String category) {
 		String result = couponService.deleteByCategory(category);
 		return result;
 	}
 	
 	//delete by company name
-	@PostMapping("/delete/company/{companyName}")
+	@DeleteMapping("/delete/company/{companyName}")
 	public String deleteCouponByCompanyName(@PathVariable("companyName") String companyName) {
 		String result = couponService.deleteByCompanyName(companyName);
 		return result;
 	}
 
 	//to get all the coupon
-	@GetMapping("/coupon")
+	@GetMapping("/all")
 	public List<Coupon> findCoupon() {
 		return (List<Coupon>) couponService.findAll();
 	}

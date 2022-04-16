@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CreateCouponComponent } from './create-coupon/create-coupon.component';
 import { FormsModule } from '@angular/forms';
 import { UpdateCouponComponent } from './update-coupon/update-coupon.component';
+import { CartComponent } from './component/cart/cart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { UpdateCouponComponent } from './update-coupon/update-coupon.component';
     HomeComponent,
     CouponListComponent,
     CreateCouponComponent,
-    UpdateCouponComponent
+    UpdateCouponComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
