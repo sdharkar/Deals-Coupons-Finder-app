@@ -2,6 +2,6 @@ export class Coupon {
     couponId!: string;
     category!: string;
     count!: number;
-    offer!: String;
+    offer!: string;
     companyName!: string;
 }

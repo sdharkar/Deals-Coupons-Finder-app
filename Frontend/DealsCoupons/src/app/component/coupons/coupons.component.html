@@ -59,17 +59,34 @@
 
 <div class="container">
     <div class="row">
-        <ng-container> <!--<ng-container *ngFor="let coupon of coupons>-->
+        <ng-container class="list" *ngFor="let id of coupons">
+            <div class="card col-md-3">
+            <h4>id: {{coupon.id}}</h4>
+            <!--Img-->
+            <h4>Provider: {{coupon.provider}}</h4>
+            <h4>Description: {{coupon.description}}</h4>
+            <h4>Expiry date: {{coupon.expiryDate}}</h4>
+            <h4>Price: {{coupon.price}}</h4>
+            <h4 class="code">Code: {{coupon.code}}</h4>
+            </div>
+        </ng-container>
+    </div>
+</div>
+
+<!--
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let coupon of coupons>
             <div class="card col-md-3">
                 <img src="" alt="">
-                <h5><!--{{}}--></h5>
-                <p><!--{{}}--></p>
-                <p><!--{{}}--></p>
-                <p><!--{{}}--></p>
+                <h5>{{}}</h5>
+                <p>{{}}</p>
+                <p>{{}}</p>
+                <p>{{}}</p>
                 <button class="btn btn-primary">Grab deal</button>
             </div>
         </ng-container>
     </div>
 
 </div>
-
+-->

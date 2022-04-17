@@ -1,0 +1,43 @@
+<div class="create-coupon">
+    <app-create-coupon></app-create-coupon>
+</div>
+
+
+<div class="panel panel-primary">
+    <div class="panel-heading"><br>
+        <h2>Coupon List</h2>
+        </div>
+        <div class="panel-body">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Provider</th>
+                <th>Code</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let coupon of coupons">
+                    <td>{{coupon.id}}</td>
+                    <td>{{coupon.provider}}</td>
+                    <td>{{coupon.code}</td>
+                    <td>{{coupon.description}}</td>
+                    <td>{{coupon.price}}</td>
+                    <td>
+                        <button (click)="updateCoupon(coupon.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+                        <button (click)="deleteCoupon(coupon.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<br>
+
+
+
+
