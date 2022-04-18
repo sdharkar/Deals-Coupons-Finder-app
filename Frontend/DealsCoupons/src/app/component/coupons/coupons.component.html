@@ -59,13 +59,13 @@
 
 <div class="container">
     <div class="row">
-        <ng-container class="list" *ngFor="let id of coupons">
+        <ng-container class="list" *ngFor="let coupon of coupons">
             <div class="card col-md-3">
             <h4>id: {{coupon.id}}</h4>
             <!--Img-->
             <h4>Provider: {{coupon.provider}}</h4>
-            <h4>Description: {{coupon.description}}</h4>
-            <h4>Expiry date: {{coupon.expiryDate}}</h4>
+            <h4>{{coupon.description}}</h4>
+            <!--<h4>Expiry date: {{coupon.expiryDate}}</h4>-->
             <h4>Price: {{coupon.price}}</h4>
             <h4 class="code">Code: {{coupon.code}}</h4>
             </div>

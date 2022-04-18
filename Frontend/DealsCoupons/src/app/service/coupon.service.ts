@@ -33,7 +33,7 @@ export class CouponService {
   }
 
   deleteCoupon(id:string): Observable<Object>{
-    return this.httpClient.delete(`${this.baseURL}/${id}`, {responseType: 'text'});
+    return this.httpClient.delete(`${this.baseURL}/delete/${id}`, {responseType: 'text'});
   }
 
 
