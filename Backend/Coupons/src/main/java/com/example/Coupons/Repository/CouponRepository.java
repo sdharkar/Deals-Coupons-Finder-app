@@ -18,5 +18,7 @@ public interface  CouponRepository extends MongoRepository<Coupon, String> {
 	
 	Optional<Coupon> findById(String id);
 
+	List<Optional<Coupon>> findByCategory(String category);
+
 
 }

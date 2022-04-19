@@ -49,6 +49,12 @@ public class CouponService {
 	}
 
 
+	public List<Optional<Coupon>> findByCategory(String category) {
+		List<Optional<Coupon>> coupon = couponRepository.findByCategory(category);
+		return coupon;
+	}
+
+
 	
 
 

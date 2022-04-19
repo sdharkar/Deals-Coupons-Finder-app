@@ -1,0 +1,17 @@
+<!--greed coupons-->
+<div class="container">
+    <div class="row">
+        <ng-container class="list" *ngFor="let coupon of coupons">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <p>Category: {{coupon.category}}</p>
+                    <p>Provider: {{coupon.provider}}</p>
+                    <p>{{coupon.description}}</p>
+                    <p>Price: {{coupon.price}}</p>
+                    <a href="#" class="btn btn-primary">GRAB DEAL</a>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

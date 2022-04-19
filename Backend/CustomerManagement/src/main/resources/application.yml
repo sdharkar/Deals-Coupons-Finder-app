@@ -1,6 +1,6 @@
 
 server:
-  port: 9000
+  port: 8090
 
 spring:
   data:
@@ -10,7 +10,7 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
   application:
-    name : Customer-Service
+    name : customer-service
   main:
    allow:
     circular:

@@ -1,3 +1,4 @@
+<div class="container">
 <div class="create-coupon">
     <app-create-coupon></app-create-coupon>
 </div>
@@ -11,7 +12,7 @@
         <table class="table table-striped">
             <thead>
             <tr>
-                <th>Id</th>
+                <th>Category</th>
                 <th>Provider</th>
                 <th>Code</th>
                 <th>Description</th>
@@ -21,7 +22,7 @@
             </thead>
             <tbody>
                 <tr *ngFor="let coupon of coupons">
-                    <td>{{coupon.id}}</td>
+                    <td>{{coupon.category}}</td>
                     <td>{{coupon.provider}}</td>
                     <td>{{coupon.code}}</td>
                     <td>{{coupon.description}}</td>
@@ -35,6 +36,7 @@
             </tbody>
         </table>
     </div>
+</div>
 </div>
 <br>
 

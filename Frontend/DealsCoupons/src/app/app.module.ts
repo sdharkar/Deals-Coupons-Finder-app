@@ -15,6 +15,8 @@ import { AdminDashboardComponent } from './component/admin-dashboard/admin-dashb
 import { UpdateCouponComponent } from './component/update-coupon/update-coupon.component';
 import { LoginComponent } from './component/login/login.component';
 import { SigninComponent } from './component/signin/signin.component';
+import { UserDashboardComponent } from './component/user-dashboard/user-dashboard.component';
+import { HomeComponent } from './component/home/home.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { SigninComponent } from './component/signin/signin.component';
     AdminDashboardComponent,
     UpdateCouponComponent,
     LoginComponent,
-    SigninComponent
+    SigninComponent,
+    UserDashboardComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
